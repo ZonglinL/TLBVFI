@@ -1,4 +1,4 @@
-rm -rf .git
+# rm -rf .git
 git config --global user.name "ZonglinL"
 git config --global user.email "zonglinlyu123123@gmail.com"
 git remote set-url origin https://github.com/ZonglinL/TLBVFI
