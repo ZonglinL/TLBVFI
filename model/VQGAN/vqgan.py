@@ -456,7 +456,7 @@ class VQFlowNetInterface(VQFlowNet):
 
         tmp_list = []
         b,c,h,w = x_prev.shape
-        scale = .25
+        scale = .5
         with torch.no_grad():
             if scale < 1:
             
