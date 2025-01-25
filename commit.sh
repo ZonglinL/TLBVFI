@@ -9,4 +9,4 @@ git add .
 git commit -m "intial commit"
 git remote add origin https://github.com/ZonglinL/TLBVFI
 git branch -M main
-git push -u origin main
+git push origin main --force
