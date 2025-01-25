@@ -1,7 +1,7 @@
 # rm -rf .git
 git config --global user.name "ZonglinL"
 git config --global user.email "zonglinlyu123123@gmail.com"
-git remote set-url origin https://github.com/ZonglinL/TLBVFI
+git remote set-url origin https://github.comgt/ZonglinL/TLBVFI
 git init
 git add . 
 #git add README.md
