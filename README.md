@@ -28,10 +28,10 @@ Our method achieves state-of-the-art performance in LPIPS/FloLPIPS/FID among all
 ## Qualitative Results
 Our method achieves the best visual quality among all recent SOTAs. 
 <p align="center">
-<img src="images/qualadd-1.png" width=95%>
+<img src="images/visual3.png" width=95%>
 <p>
 
-For more visualizations, please refer to our <a href="https://zonglinl.github.io/videointerp/">project page</a>.
+For more visualizations, please refer to our <a href="https://zonglinl.github.io/tlbvfi_page/">project page</a>.
 
 ## Preparation
 
