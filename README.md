@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-<img src="images/Teaser.jpg" width=95%>
+<img src="images/visual1.png" width=95%>
 <p>
 
 ## Overview
