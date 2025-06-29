@@ -1,0 +1,13 @@
+*.sbatch
+*.out
+data/
+netflix/
+results/
+commit.sh
+*.pth
+**/__pycache__/
+interpolated/
+src/
+**/*.png
+**/*.jpg
+logs/
