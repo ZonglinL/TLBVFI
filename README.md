@@ -1,4 +1,4 @@
-# TLB-VFI: Temporal-Aware Latent Brownian Bridge Diffusion for Video Frame Interpolation
+# ICCV 2025 TLB-VFI: Temporal-Aware Latent Brownian Bridge Diffusion for Video Frame Interpolation
 
 <div align="center">
   
