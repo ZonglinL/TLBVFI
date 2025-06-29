@@ -13,7 +13,7 @@
 <p>
 
 ## Overview
-We takes advangtage of optical flow estimation in the autoencoder part and design the Consecutive Brownian Bridge Diffusion that transits among three frames specifically for the frame interpolation task. (a)**The autoencoder with flow estimation** improves the visual quality of frames decoded from the latent space. (b) **The Consecutive Brownian Bridge Diffusion** reduce cumulative variance during sampling, which is prefered in VFI becuase there is a *deterministic groundtruth* rather than *a diverse set of images*. (c) During inference, the decoder recieves estimated latent features from the Consecutive Brownian Bridge Diffusion.
+We takes advangtage of temporal information extraction in the pixel space (3D wavelet) and latent space (3D convolutino and attention) to improve the temporal consistentcy of our model. 
 
 <p align="center">
 <img src="images/overview.jpg" width=95%>
@@ -26,7 +26,7 @@ Our method achieves state-of-the-art performance in LPIPS/FloLPIPS/FID among all
 <p>
 
 ## Qualitative Results
-Our method achieves state-of-the-art performance in LPIPS/FloLPIPS/FID among all recent SOTAs. 
+Our method achieves the best visual quality among all recent SOTAs. 
 <p align="center">
 <img src="images/qualadd-1.png" width=95%>
 <p>
