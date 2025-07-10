@@ -130,9 +130,11 @@ def main():
     for strCategory in ['resized', 'cropped']:
         counter = 0
         if strCategory == 'cropped':
+            scale = 0.5
             path = "results/Xiph_4K/LBBDM-f32/sample_to_eval"
             transform = transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]) #outptu tensor in [-1,1]
         else:
+            scale = 1
             path = "results/Xiph_2K/LBBDM-f32/sample_to_eval"
             transform = transforms.Compose([transforms.ToTensor(),transforms.Resize((1080,2048)),transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]) #outptu tensor in [-1,1]
         os.makedirs(path,exist_ok = True)
@@ -158,7 +160,7 @@ def main():
                     frame_gt = frame_gt[:,:,540:-540, 1024:-1024]
 
 
-                I = interpolate(frame0,frame1,model,frame_gt)
+                I = interpolate(frame0,frame1,model,frame_gt,scale = scale)
                 I = I/2 + 0.5
                 frame0 = frame0/2 + 0.5
                 frame1 = frame1/2 + 0.5
