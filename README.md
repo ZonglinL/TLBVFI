@@ -144,7 +144,12 @@ Please edit the configs file in ```configs/Template-LBBDM-video.yaml```!
 
 change data.eval and data.mode to decide which dataset you want to evaluate. eval is chosen from {"DAVIS","FILM"} and mode is from {"easy","medium","hard","extreme"}
 
-Change data.dataset_name to create a folder to save sampled images. You will need to distinguish different difficulty level for SNU-FILM when you evaluating SNU-FILM. For example, in our implementation, we choose from {"DAVIS","FILM_{difficulty level}"}. The saved images will be in ```results/dataset_name```
+Change data.dataset_name to create a folder to save sampled images. You will need to distinguish different difficulty level for SNU-FILM when you evaluating SNU-FILM. For example, in our implementation, we choose from {"DAVIS","FILM_{difficulty level}"}. The saved images will be in ```results/dataset_name```. Run:
+
+```
+python3 main.py --configs/Template-LBBDM-video.yaml --gpu_ids 0 --resume_model /path/to/vimeo_unet --sample_to_eval
+```
+
 
 **To evaluate Xiph dataset**
 
@@ -159,7 +164,6 @@ python3 Xiph_eval.py --resume_model 'path to vimeo_unet.pth'
 Then, to get LPIPS/FloLPIPS/FID, run:
 
 ```
-python3 main.py --configs/Template-LBBDM-video.yaml --gpu_ids 0 --resume_model /path/to/vimeo_unet --sample_to_eval
 
 python3 batch_to_entire.py --latent --dataset dataset_name --step 10
 
