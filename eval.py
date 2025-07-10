@@ -25,6 +25,6 @@ if args.latent:
     root = f'results/{args.dataset}/LBBDM-f32/sample_to_eval'
 else:
     root = f'results/{args.dataset}/BrownianBridge/sample_to_eval'
-#calc_FID(os.path.join(root,'next'),os.path.join(root,'gt'))
+calc_FID(os.path.join(root,'next'),os.path.join(root,'gt'))
 calc_LPIPS(os.path.join(root,f'{args.step}'),os.path.join(root,'ground_truth'))
-#calc_FLOLPIPS(os.path.join(root,f'{args.step}'),os.path.join(root,'ground_truth'),os.path.join(root,'condition'))
+calc_FLOLPIPS(os.path.join(root,f'{args.step}'),os.path.join(root,'ground_truth'),os.path.join(root,'condition'))
