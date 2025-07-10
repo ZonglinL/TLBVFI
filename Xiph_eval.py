@@ -68,12 +68,12 @@ def interpolate(frame0,frame1,model,gt = None,scale = 1):
     with torch.no_grad():
         if gt is None:
             gt = torch.zeros_like(frame0)
-        inputs = torch.cat([frame0,gt,frame1],0) 
-        latent,phi_list= model.encode(inputs,cond = True)
-        latent = torch.stack(torch.chunk(latent,3),2)
-        #model.sample(frame0,frame1, clip_denoised=False,scale = scale)
+        #inputs = torch.cat([frame0,gt,frame1],0) 
+        #latent,phi_list= model.encode(inputs,cond = True)
+        #latent = torch.stack(torch.chunk(latent,3),2)
+        out = model.sample(frame0,frame1, clip_denoised=False,scale = scale)
         
-        out = model.decode(latent,frame0,frame1,phi_list,scale = scale) 
+        #out = model.decode(latent,frame0,frame1,phi_list,scale = scale) 
     return out
 
 
