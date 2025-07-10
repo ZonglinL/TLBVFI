@@ -287,14 +287,14 @@ class BBDMRunner(DiffusionBaseRunner):
 
                 
                 #Encode and Deocde, without sampling
-                inputs = torch.cat([y,torch.zeros_like(y),z],0) 
-                latent,phi_list= self.net.encode(inputs,cond = True)
-                latent = torch.stack(torch.chunk(latent,3),2)
+                #inputs = torch.cat([y,torch.zeros_like(y),z],0) 
+                #latent,phi_list= self.net.encode(inputs,cond = True)
+                #latent = torch.stack(torch.chunk(latent,3),2)
                 
-                sample_next = self.net.decode(latent,y,z,phi_list,scale = scale) 
+                #sample_next = self.net.decode(latent,y,z,phi_list,scale = scale) 
                 
             
-                #sample_next = net.sample(y,z, clip_denoised=False,scale = scale)
+                sample_next = net.sample(y,z, clip_denoised=False,scale = scale)
                 
                 for i in range(batch_size):
 
