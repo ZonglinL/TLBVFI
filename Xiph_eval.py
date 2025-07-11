@@ -130,7 +130,7 @@ def main():
     for strCategory in ['resized', 'cropped']:
         counter = 0
         if strCategory == 'cropped':
-            scale = 0.5
+            scale = 1
             path = "results/Xiph_4K/LBBDM-f32/sample_to_eval"
             transform = transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]) #outptu tensor in [-1,1]
         else:
