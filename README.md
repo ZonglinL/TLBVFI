@@ -48,9 +48,9 @@ pip install -r requirements.txt
 
 ### Trained Model
 
-The weights of of our trained model can be downloaded <a href="https://drive.google.com/file/d/1e_v32r6dxRXzjQXo6XDALiO9PM-w6aJS/view?usp=sharing">here</a>. This is named as ```vimeo_unet.pth```.
+The weights of our model are now available at <a href="https://huggingface.co/ucfzl/TLBVFI">huggingface</a>. vimeo_unet.pth is the full model, and vimeo_new.ckpt is the VQ Model (autoencoder).
 
-The VQ Model (the autoencoder part of the above model) is available <a href="https://drive.google.com/file/d/11HOW6LOwxOae2ET63Fqzs9Dzg3-F9pw9/view?usp=sharing"> here</a>. This is named as ```vimeo_new.ckpt```.
+We will keep the google drive link until July 31 2025. Full model <a href="https://drive.google.com/file/d/1e_v32r6dxRXzjQXo6XDALiO9PM-w6aJS/view?usp=sharing">here</a> and autoencoder <a href="https://drive.google.com/file/d/11HOW6LOwxOae2ET63Fqzs9Dzg3-F9pw9/view?usp=sharing"> here</a>.
 
 
 ## Inference
