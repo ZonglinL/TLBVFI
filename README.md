@@ -4,7 +4,7 @@
   
 [Zonglin Lyu](https://zonglinl.github.io/), [Chen Chen](https://www.crcv.ucf.edu/chenchen/)
 
-[![Website shields.io](https://img.shields.io/website?url=http%3A//poco.is.tue.mpg.de)](https://zonglinl.github.io/tlbvfi_page/) [![YouTube Badge](https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube)](https://youtu.be/LoJIVSiT5kE)  [![arXiv](https://img.shields.io/badge/arXiv-2507.04984-00ff00.svg)](https://arxiv.org/abs/2507.04984)
+[![Website shields.io](https://img.shields.io/website?url=http%3A//poco.is.tue.mpg.de)](https://zonglinl.github.io/tlbvfi_page/) [![YouTube Badge](https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube)](https://youtu.be/w5XD5s9S8dY)  [![arXiv](https://img.shields.io/badge/arXiv-2507.04984-00ff00.svg)](https://arxiv.org/abs/2507.04984)
 
 </div>
 
